@@ -1,5 +1,5 @@
 //
-//  AddFoodView.swift
+//  EditFoodView.swift
 //  Calories
 //
 //  Created by Danil Peregorodiev on 09.06.2022.
@@ -7,9 +7,12 @@
 
 import SwiftUI
 
-struct AddFoodView: View {
+struct EditFoodView: View {
+    
     @Environment(\.managedObjectContext) var managedObjContext
     @Environment(\.dismiss) var dismiss
+    
+    var food: FetchedResults<Food>.Element
     
     @State private var name = ""
     @State private var calories: Double = 0
@@ -17,8 +20,11 @@ struct AddFoodView: View {
     var body: some View {
         Form {
             Section {
-                TextField("Food name", text: $name)
-                
+                TextField("\(food.name!)", text: $name)
+                    .onAppear {
+                        name = food.name!
+                        calories = food.calories
+                    }
                 VStack {
                     Text("Calories: \(Int(calories))")
                     Slider(value: $calories, in: 0...1000, step: 10)
@@ -28,7 +34,7 @@ struct AddFoodView: View {
                 HStack {
                     Spacer()
                     Button("Submit") {
-                        DataController().addFood(name: name, calories: calories, context: managedObjContext)
+                        DataController().editFood(food: food, name: name, calories: calories, context: managedObjContext)
                         dismiss()
                     }
                     Spacer()
@@ -38,8 +44,3 @@ struct AddFoodView: View {
     }
 }
 
-struct AddFoodView_Previews: PreviewProvider {
-    static var previews: some View {
-        AddFoodView()
-    }
-}

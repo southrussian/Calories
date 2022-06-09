@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		58367A63285261B70041953C /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58367A62285261B70041953C /* AddFoodView.swift */; };
 		58367A65285264330041953C /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58367A64285264330041953C /* TimeFormatting.swift */; };
+		58367A672852760E0041953C /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58367A662852760E0041953C /* EditFoodView.swift */; };
 		584779BB28525127005D1525 /* CaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584779BA28525127005D1525 /* CaloriesApp.swift */; };
 		584779BD28525127005D1525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584779BC28525127005D1525 /* ContentView.swift */; };
 		584779BF2852512A005D1525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584779BE2852512A005D1525 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		58367A62285261B70041953C /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		58367A64285264330041953C /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		58367A662852760E0041953C /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		584779B728525127005D1525 /* Calories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584779BA28525127005D1525 /* CaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesApp.swift; sourceTree = "<group>"; };
 		584779BC28525127005D1525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 			children = (
 				584779BC28525127005D1525 /* ContentView.swift */,
 				58367A62285261B70041953C /* AddFoodView.swift */,
+				58367A662852760E0041953C /* EditFoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				584779CD285252E7005D1525 /* DataController.swift in Sources */,
 				584779BB28525127005D1525 /* CaloriesApp.swift in Sources */,
 				584779CB28525253005D1525 /* FoodModel.xcdatamodeld in Sources */,
+				58367A672852760E0041953C /* EditFoodView.swift in Sources */,
 				58367A65285264330041953C /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
