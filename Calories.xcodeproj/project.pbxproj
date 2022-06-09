@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58367A63285261B70041953C /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58367A62285261B70041953C /* AddFoodView.swift */; };
 		584779BB28525127005D1525 /* CaloriesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584779BA28525127005D1525 /* CaloriesApp.swift */; };
 		584779BD28525127005D1525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584779BC28525127005D1525 /* ContentView.swift */; };
 		584779BF2852512A005D1525 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 584779BE2852512A005D1525 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		58367A62285261B70041953C /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		584779B728525127005D1525 /* Calories.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calories.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		584779BA28525127005D1525 /* CaloriesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaloriesApp.swift; sourceTree = "<group>"; };
 		584779BC28525127005D1525 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +38,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58367A5F2852615A0041953C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				584779BC28525127005D1525 /* ContentView.swift */,
+				58367A62285261B70041953C /* AddFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58367A60285261680041953C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		584779AE28525127005D1525 = {
 			isa = PBXGroup;
 			children = (
@@ -55,8 +73,9 @@
 		584779B928525127005D1525 /* Calories */ = {
 			isa = PBXGroup;
 			children = (
+				58367A60285261680041953C /* Helpers */,
+				58367A5F2852615A0041953C /* Views */,
 				584779BA28525127005D1525 /* CaloriesApp.swift */,
-				584779BC28525127005D1525 /* ContentView.swift */,
 				584779C828525237005D1525 /* DataModel */,
 				584779BE2852512A005D1525 /* Assets.xcassets */,
 				584779C02852512A005D1525 /* Preview Content */,
@@ -151,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58367A63285261B70041953C /* AddFoodView.swift in Sources */,
 				584779BD28525127005D1525 /* ContentView.swift in Sources */,
 				584779CD285252E7005D1525 /* DataController.swift in Sources */,
 				584779BB28525127005D1525 /* CaloriesApp.swift in Sources */,
